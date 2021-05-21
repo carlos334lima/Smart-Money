@@ -9,7 +9,10 @@ import Colors from '../../styles/Colors';
 
 const BalanceLabel = () => {
   return (
-    <View></View>
+    <View style={styles.container}>
+      <Text style={styles.label}>Saldo Atual</Text>
+      <Text style={styles.value}>R$ 2.309,05</Text>
+    </View>
   )
 }
 

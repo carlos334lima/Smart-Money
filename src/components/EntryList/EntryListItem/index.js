@@ -11,7 +11,9 @@ import Colors from '../../../styles/Colors';
 
 const EntryListItem = () => {
   return (
-    <View></View>
+    <View>
+      <Text>EntryListItem</Text>
+    </View>
   )
 }
 

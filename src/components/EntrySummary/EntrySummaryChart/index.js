@@ -5,14 +5,16 @@ import {PieChart} from 'react-native-svg-charts';
  */
 const EntrySummaryChart = () => {
   return (
-    <View></View>
+    <View style={styles.container}>
+
+    </View>
   )
 }
 
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
+    //flex: 1,
   },
   chart: {
     height: 100,

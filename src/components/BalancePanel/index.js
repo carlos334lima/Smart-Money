@@ -1,11 +1,12 @@
 import React from 'react';
-import {StatusBar, View, TouchableOpacity, StyleSheet} from 'react-native';
-/* 
-import LinearGradient from 'react-native-linear-gradient';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import {StatusBar, View, TouchableOpacity, StyleSheet, Button} from 'react-native';
 
 import BalancePanelLabel from './BalancePanelLabel';
 import BalancePanelChart from './BalancePanelChart';
+
+/* 
+import LinearGradient from 'react-native-linear-gradient';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import useBalance from '../../hooks/useBalance'; */
 
@@ -13,14 +14,20 @@ import Colors from '../../styles/Colors';
 
 const BalancePanel = () => {
   return (
-    <View></View>
+    <View style={styles.container}>
+      <BalancePanelLabel></BalancePanelLabel> 
+      <BalancePanelChart></BalancePanelChart> 
+      <Button title="Adicionar"/>
+        
+    </View>
   )
 }
 
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: -23,
+    /*  marginBottom: -23, */
+    
   },
   panel: {},
   button: {

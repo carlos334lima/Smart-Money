@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 /* 
 import {BarChart} from 'react-native-svg-charts';
 
@@ -7,7 +7,9 @@ import useBalanceSumByDate from '../../../hooks/useBalanceSumByDate'; */
 
 const BalancePanelChart = () => {
   return (
-    <View></View>
+    <View style={styles.container}>
+      {/* <Text> BalancePanelChart </Text> */}
+    </View>
   )
 }
 
