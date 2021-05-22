@@ -1,14 +1,17 @@
-import React from 'react';
-import { Text, View } from 'react-native'
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow strict-local
+ */
 
-/* import Routes from './routes'; */
+ import React from 'react';
 
-const App = () => {
-  return (
-    <View>
-      <Text>ola</Text>
-    </View>
-  );
-};
-
-export default App;
+ import Routes from './routes';
+ 
+ const App = () => {
+   return <Routes />;
+ };
+ 
+ export default App;
