@@ -12,11 +12,12 @@ import useBalance from '../../hooks/useBalance'; */
 
 import Colors from '../../styles/Colors';
 
-const BalancePanel = () => {
+const BalancePanel = ({ currentBalance }) => {
+
   return (
     <View style={styles.container}>
-      <BalancePanelLabel></BalancePanelLabel> 
-      <BalancePanelChart></BalancePanelChart> 
+      <BalancePanelLabel currentBalance={currentBalance}/>
+      <BalancePanelChart />
         
     </View>
   )

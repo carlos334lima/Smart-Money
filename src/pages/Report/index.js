@@ -27,9 +27,24 @@ import CategoryModal from '../../components/CategoryModal'; */
 import Colors from "../../styles/Colors";
 
 const Report = () => {
+
+  const currentBalance = 2065.35;
+
+  const entries = [ 
+    {key: '1', description : "Alimentação $210", amount: 10},
+    {key: '2', description : "Alimentação $210", amount: 10},
+    {key: '3', description : "Alimentação $210", amount: 10},
+  ]
+
+  const entriesGrouped = [ 
+    {key: '1', description : "Alimentação $210", amount: 10},
+    {key: '2', description : "Alimentação $210", amount: 10},
+    {key: '3', description : "Alimentação $210", amount: 10},
+  ]
+
   return (
     <View style={styles.container}>
-      <BalanceLabel />
+      <BalanceLabel currentBalance={currentBalance}/>
       <View>
         <Picker>
           <Picker.Item label="Todas as categorias"></Picker.Item>
@@ -38,8 +53,8 @@ const Report = () => {
           <Picker.Item label="Últimos 7 dias"></Picker.Item>
         </Picker>
       </View>
-      <EntrySummary />
-      <EntryList />
+      <EntrySummary entriesGrouped={entriesGrouped}/>
+      <EntryList entries={entries}/>
 
       <View>
         <Button title="Salvar" />

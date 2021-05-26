@@ -5,11 +5,11 @@ import Currency from '../../Core/Currency'; */
 
 import Colors from '../../../styles/Colors';
 
-const BalancePanelLabel = () => {
+const BalancePanelLabel = ({ currentBalance }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.label}>Saldo Atual</Text>
-      <Text style={styles.value}>R$ 2.309,05</Text>
+      <Text style={styles.value}>R$ {currentBalance}</Text>
     </View>
   )
 }

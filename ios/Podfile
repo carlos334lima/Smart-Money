@@ -12,6 +12,8 @@ target 'smart' do
     :hermes_enabled => false
   )
 
+  pod 'RealmJS', :path => '../node_modules/realm'
+
   target 'smartTests' do
     inherit! :complete
     # Pods for testing

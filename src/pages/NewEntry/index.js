@@ -21,9 +21,12 @@ import useEntries from '../../hooks/useEntries'; */
 import Colors from "../../styles/Colors";
 
 const NewEntry = ({ navigation }) => {
+
+  const currentBalance = 2065.35
+
   return (
     <View style={styles.container}>
-      <BalanceLabel />
+      <BalanceLabel currentBalance={currentBalance}/>
 
       <View>
         <TextInput style={styles.input} />
