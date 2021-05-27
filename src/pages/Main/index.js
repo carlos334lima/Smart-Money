@@ -9,9 +9,15 @@ import EntryList from '../../components/EntryList';
 
 import Colors from '../../styles/Colors';
 
+import { saveEntry } from '../../services/Entries'
+
 const Main = ({ navigation }) => {
 
   const currentBalance  = 2564.68;
+
+  const save = () => {
+    saveEntry()
+  }
 
   const entries = [ 
     {key: '1', description : "Alimentação $210", amount: 10},
@@ -28,7 +34,7 @@ const Main = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <BalancePanel currentBalance={currentBalance}/>
-      <Button title="Adicionar" onPress={() => navigation.navigate('NewEntry')}/>
+      <Button title="Adicionar" onPress={save}/>
       <EntrySummary entriesGrouped={entriesGrouped}/>
       <EntryList entries={entries}/>
     </View>
